@@ -12,8 +12,11 @@ listaCognomi.sort();
 console.log(listaCognomi);
 // Stampare in console array
 for (var i = 0; i < listaCognomi.length; i++) {
-  console.log(listaCognomi[i]);
+  // console.log(listaCognomi[i]);
+  var lista = document.getElementById('lista').innerHTML;
+  document.getElementById('lista').innerHTML = lista + ' ' + "<li>" + listaCognomi[i] + "</li>";
 }
 // Trovare posizione Elemento
 var a = listaCognomi.indexOf(cognomeUtente);
-console.log(a + 1);
+// console.log(a + 1);
+document.getElementById('posizione').innerHTML += a + 1;
