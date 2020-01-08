@@ -10,3 +10,6 @@ console.log(listaCognomi);
 // Ordinare i cognomi nell'array in ordine alfabetico
 listaCognomi.sort();
 console.log(listaCognomi);
+// Trovare posizione Elemento
+var a = listaCognomi.indexOf(cognomeUtente);
+console.log(a + 1);
